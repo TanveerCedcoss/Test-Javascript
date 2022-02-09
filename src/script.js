@@ -35,7 +35,7 @@ function checkFields()
     }
     if(mobile.length<10 || mobile.length>10)
     {
-        document.getElementById("nb").innerHTML="Enter correct mobile number!!!";
+        document.getElementById("nb").innerHTML="Enter correct mobile number (It should have 10 digits)!!!";
         document.getElementById("mobile").style="border:1px solid red" ;       
     }
     if(isNaN(mobile))

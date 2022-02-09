@@ -7,6 +7,7 @@ function fetchData(){
 
     fname = document.getElementById("name").value;
     mobile= document.getElementById("mobile").value;
+    console.log(mobile.length);
     checkFields();
 
 }
@@ -31,6 +32,11 @@ function checkFields()
     {
         document.getElementById("nb").innerHTML="This is empty!!!";
         document.getElementById("mobile").style="border:1px solid red" ;
+    }
+    if(mobile.length<10 || mobile.length>10)
+    {
+        document.getElementById("nb").innerHTML="Enter correct mobile number!!!";
+        document.getElementById("mobile").style="border:1px solid red" ;       
     }
     if(isNaN(mobile))
     {
